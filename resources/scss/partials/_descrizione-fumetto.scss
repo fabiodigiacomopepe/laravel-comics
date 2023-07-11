@@ -8,7 +8,7 @@
         background-color: $colore_primario;
 
        .thumb {
-            width: 80%;
+            width: 60%;
             margin: 0 auto;
 
             div {
@@ -18,13 +18,156 @@
                     max-width: 100%;
                     position: relative;
                     bottom: 170px;
+                    border: 1px solid white;
                 }
             }
         }
     }
 
     .info {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
+        gap: 30px;
+
+        .info-comic {
+            width: 70%;
+
+            h2 {
+                margin: 60px 0 15px;
+                text-transform: uppercase;
+                color: #003f5e;
+                font-weight: bold;
+            }
+
+            .price-container {
+                width: 100%;
+                background-color: #55ba59;
+                margin-bottom: 30px;
+
+                .left {
+                    width: 70%;
+                    padding: 15px;
+                    color: #c2dfc0;
+                    font-weight: bold;
+                }
+
+                .right {
+                    width: 30%;
+                    justify-content: center;
+                    font-weight: bold;
+                    align-items: center;
+                    color: white;
+                    border-left: 1px solid black;
+                }
+            }
+
+            .price {
+                color: #c2dfc0;
+                font-weight: bold;
+
+                span {
+                    color: white;
+                }
+            }
+
+            .description {
+                margin-bottom: 100px;
+            }
+        }
+
+        .foto-laterale {
+            width: 30%;
+            padding-top: 60px;
+
+            div {
+                text-align: right;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .sezione-grigia {
+        background-color: #f6f6f6;
+
+        .info-autori {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding-bottom: 120px;
+
+            .col-sinistra {
+                width: 60%;
+                padding-top: 20px;
+
+                .art-by,
+                .written-by {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                h3,
+                .art-by,
+                .written-by {
+                    border-bottom: 2px solid #dfdddd;
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    color: #003f5e;
+                    font-weight: bold;
+
+                    .sx {
+                        width: 30%;
+                    }
+
+                    .dx {
+                        width: 70%;
+                        color: #47addc;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .col-destra {
+                width: 40%;
+                padding-top: 20px;
+
+                .title {
+                    color: #003f5e;
+                    font-weight: bold;
+                    width: 50%;
+                }
+
+                h3,
+                .riga {
+                    border-bottom: 2px solid #dfdddd;
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    color: #003f5e;
+                    font-weight: bold;
+
+                    span {
+                        color: #47addc;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+
+                    .series,
+                    .us-price,
+                    .onsaledate {
+                        width: 50%;
+                        color: black;
+                        font-weight: normal;
+                    }
+                }
+
+                .riga {
+                    justify-content: space-between;
+                }
+            }
+        }
     }
 }
