@@ -1,0 +1,30 @@
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+#descrizione-fumetto {
+    .sezione-blu {
+        width: 100%;
+        height: 70px;
+        background-color: $colore_primario;
+
+       .thumb {
+            width: 80%;
+            margin: 0 auto;
+
+            div {
+                width: 140px;
+
+                img {
+                    max-width: 100%;
+                    position: relative;
+                    bottom: 170px;
+                }
+            }
+        }
+    }
+
+    .info {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

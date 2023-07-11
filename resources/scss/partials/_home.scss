@@ -49,6 +49,10 @@
                         font-weight: 200;
                         font-size: 12px;
                         min-height: 30px;
+
+                        a {
+                            color: white;
+                        }
                     }
                 }
             }
@@ -59,6 +63,39 @@
                 width: 220px;
                 text-align: center;
                 margin: 25px auto 0;
+            }
+        }
+    }
+
+    .container_blue-section {
+        background-color: $colore_primario;
+
+        .container_blue {
+            @include flex_container;
+            height: 130px;
+            color: white;
+            justify-content: space-around;
+
+            div {
+                display: flex;
+                align-items: center;
+
+                img.b {
+                    width: 30px;
+                }
+
+                img.s {
+                    width: 40px;
+                }
+
+                img.svg {
+                    width: 50px;
+                }
+
+                span {
+                    margin-left: 10px;
+                    font-size: 12px;
+                }
             }
         }
     }
