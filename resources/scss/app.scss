@@ -1,1 +1,28 @@
 @import '~bootstrap/scss/bootstrap';
+
+@import 'partials/header';
+@import 'partials/jumbotron';
+@import 'partials/home';
+@import 'partials/footer';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    list-style-type: none;
+}
